@@ -1,26 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
-import 'HomePage2.dart';
-import 'HomePage3.dart';
+import 'HomePage4.dart';
+import 'main.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
+class HomePage3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,7 +89,7 @@ class HomePage extends StatelessWidget {
               Opacity(
                 opacity: 0.75,
                 child: Text(
-                  'Engineering C',
+                  'Engineering E',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w900,
@@ -125,12 +109,12 @@ class HomePage extends StatelessWidget {
                         PageTransition(
                             type: PageTransitionType.fade,
                             duration: Duration(milliseconds: 800),
-                            child: HomePage3()));
+                            child: HomePage4()));
                   }),
               Opacity(
                 opacity: 1,
                 child: Text(
-                  'Engineering B',
+                  'Engineering C',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w900,
@@ -147,7 +131,7 @@ class HomePage extends StatelessWidget {
                         PageTransition(
                             type: PageTransitionType.fade,
                             duration: Duration(milliseconds: 800),
-                            child: HomePage2()));
+                            child: HomePage()));
                   }),
               SizedBox(
                 width: 50,
@@ -155,7 +139,7 @@ class HomePage extends StatelessWidget {
               Opacity(
                 opacity: 0.75,
                 child: Text(
-                  'Engineering A',
+                  'Engineering B',
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w900,
@@ -169,7 +153,7 @@ class HomePage extends StatelessWidget {
               Opacity(
                 opacity: 0.5,
                 child: Text(
-                  'Engineering E',
+                  'Engineering A',
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w900,
@@ -276,7 +260,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Center(
                               child:
-                                  SpecButton(text: "Continue", press: () {})),
+                              SpecButton(text: "Continue", press: () {})),
                         ],
                       ),
                     ),
@@ -369,7 +353,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Center(
                               child:
-                                  SpecButton(text: "Continue", press: () {})),
+                              SpecButton(text: "Continue", press: () {})),
                         ],
                       ),
                     ),
@@ -462,7 +446,7 @@ class HomePage extends StatelessWidget {
                           ),
                           Center(
                               child:
-                                  SpecButton(text: "Continue", press: () {})),
+                              SpecButton(text: "Continue", press: () {})),
                         ],
                       ),
                     ),
